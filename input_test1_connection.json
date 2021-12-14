@@ -1,0 +1,6 @@
+{
+  "url": "localhost",
+  "port": "1729",
+  "database": "pm_4",
+  "gQuery": "match $a isa log, has logName 'L1';  $b isa event, has eventName $c; $d (owner: $a, item: $b) isa trace,  has traceId $e, has index $f;  get $a, $b, $c, $d, $e, $f; "
+}
