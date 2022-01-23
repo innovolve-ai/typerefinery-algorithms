@@ -11,10 +11,24 @@ This repo contains:
 First pull repo into a directory
 
 Then setup python virtual env
-```pipenv shell```
+
+```bash
+pipenv shell
+```
 
 then install dependencies with
-```pipenv install```
+
+```bash
+pipenv install
+```
+
+then after everything installed
+
+```bash
+flask run
+```
+
+then access `localhost\login` to access the webpage.
 
 ## Testing TypeDB Connection and Basic Dataset
 
