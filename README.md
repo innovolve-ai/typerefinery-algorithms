@@ -10,6 +10,12 @@ This repo contains:
 
 First pull repo into a directory
 
+Install Pipenv
+
+```bash
+pip install pipenv
+```
+
 Then setup python virtual env
 
 ```bash
@@ -19,6 +25,7 @@ pipenv shell
 then install dependencies with
 
 ```bash
+pip install Flask
 pipenv install
 ```
 
@@ -29,6 +36,13 @@ flask run
 ```
 
 then access `localhost\login` to access the webpage.
+
+## Run in docker
+
+
+```powershell
+docker run --rm -it -v ${PWD}:/source -W /source -p 80:80 kennethreitz/pipenv
+```
 
 ## Testing TypeDB Connection and Basic Dataset
 
