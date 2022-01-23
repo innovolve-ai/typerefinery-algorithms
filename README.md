@@ -39,9 +39,8 @@ then access `localhost\login` to access the webpage.
 
 ## Run in docker
 
-
 ```powershell
-docker run --rm -it -v ${PWD}:/source -W /source -p 80:80 kennethreitz/pipenv
+docker run --rm -it -v ${PWD}:/build/source -v /var/run/docker.sock:/var/run/docker.sock -p 80:80 -w /build/source aemdesign/centos-java-buildpack:jdk11 /bin/bash --login
 ```
 
 ## Testing TypeDB Connection and Basic Dataset
